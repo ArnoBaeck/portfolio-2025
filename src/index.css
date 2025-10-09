@@ -1,0 +1,18 @@
+/* Remove all default browser (including Google Chrome) styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
