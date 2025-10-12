@@ -1,0 +1,23 @@
+@import url("https://use.typekit.net/qes6mbe.css");
+
+.slide-item {
+    color: white;
+    font-size: 48pt;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: area-extended, sans-serif;
+    font-weight: 700;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.right, .center, .left {
+    overflow-x: hidden;
+}

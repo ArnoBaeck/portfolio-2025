@@ -1,6 +1,6 @@
 import Background from "./components/Background";
 import ResponsiveText from "./components/ResponsiveText";
-import Test from "./components/Test";
+import SlideInText from "./components/SlideInText";
 
 function App() {
 	return (
@@ -13,8 +13,21 @@ function App() {
 					position: "relative",
 				}}
 			>
-				<div className="responsive-text-container" style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
-					<div className="responsive-text" style={{width:"70%", height:"50vh", display:"flex", flexDirection:"column", alignContent:"center", alignItems:"center"}}>
+				<div
+					className="responsive-text-container"
+					style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}
+				>
+					<div
+						className="responsive-text"
+						style={{
+							width: "70%",
+							height: "50vh",
+							display: "flex",
+							flexDirection: "column",
+							alignContent: "center",
+							alignItems: "center",
+						}}
+					>
 						<ResponsiveText
 							text={`FULL-STACK`}
 							flex={true}
@@ -43,7 +56,32 @@ function App() {
 					</div>
 				</div>
 
-				<Test />
+				<SlideInText
+					className="left"
+					lines="#FRONTEND"
+					direction="left"
+					distance="offscreen"
+					start="top 65%"
+					respectReducedMotion={false}
+				/>
+
+				<SlideInText
+					className="right"
+					lines="#BACKEND"
+					direction="right"
+					distance="offscreen"
+					start="top 65%"
+					respectReducedMotion={false}
+				/>
+
+				<SlideInText
+					className="center"
+					lines="#WEBDESIGN"
+					direction="left"
+					distance="offscreen"
+					start="top 65%"
+					respectReducedMotion={false}
+				/>
 			</div>
 		</>
 	);
