@@ -75,7 +75,7 @@ function SkillsPane({ p }) {
 
 export default function ProjectRows() {
 	return (
-		<div className="project-rows-container">
+		<div className="project-rows-container" id="my-work">
 			<div className="project-rows-inner">
 				<div className="project-rows-header">
 					<h1>PROJECTS</h1>

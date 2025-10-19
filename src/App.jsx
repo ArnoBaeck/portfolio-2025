@@ -22,6 +22,7 @@ export default function App() {
 						alignItems: "center",
 						height: "100vh",
 					}}
+					id="home"
 				>
 					<div
 						className="responsive-text"
