@@ -49,3 +49,16 @@
     width: 100%;
     font-size: 48pt;
 }
+
+@media (max-width: 840px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .content-text, .content-buttons {
+        width: 100%;
+        margin-top: 0;
+    }
+    
+}
