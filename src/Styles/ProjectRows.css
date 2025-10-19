@@ -21,7 +21,7 @@ body{
 
 .project-rows-container{
   width:100%;
-  margin:48px 0;
+  margin:150px 0;
   padding:28px 0;
   background:
     radial-gradient(1200px 400px at 20% -10%, rgba(150,150,200,.08), transparent 60%),
@@ -33,7 +33,7 @@ body{
 }
 .project-rows-inner{ max-width:1200px; margin:0 auto; padding:0 28px; }
 .project-rows-header{ display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; }
-.project-rows-header h1{ font-size:26px; letter-spacing:.4px; margin:0; }
+.project-rows-header h1{ font-size:48pt; letter-spacing:.4px; margin:0; }
 
 .project-rows-list { display:block; }
 
@@ -145,4 +145,8 @@ body{
   }
 
   .project-item + .project-item{ margin-top: 16px; }
+
+  .project-rows-header h1 {
+    font-size: 18pt;
+  }
 }

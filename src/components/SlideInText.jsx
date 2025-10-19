@@ -1,4 +1,3 @@
-// SlideInText.jsx (relevant stuk gepatcht)
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,7 +8,7 @@ import "../Styles/SlideInText.css";
 export default function SlideInText({
   lines = "Hello GSAP 👋",
   direction = "left",
-  distance = 80,              // kan ook "offscreen" (string) zijn
+  distance = 80,
   start = "top 75%",
   once = false,
   duration = 0.8,
@@ -52,17 +51,14 @@ export default function SlideInText({
         return (direction === "left" || direction === "right") ? vw : vh;
       })();
 
-      // 2) Bepaal 'from' state o.b.v. richting + dynamische afstand
-      const from = { opacity: 0 }; // autoAlpha is ook oké
+      const from = { opacity: 0 };
       if (direction === "left") from.x = -axisDistance;
       if (direction === "right") from.x = axisDistance;
       if (direction === "up") from.y = -axisDistance;
       if (direction === "down") from.y = axisDistance;
 
-      // 3) Plaats items direct in startpose (voorkomt FOUC/flash)
       gsap.set(items, from);
 
-      // 4) Animatie naar in-beeld
       gsap.to(items, {
         opacity: 1,
         x: 0,

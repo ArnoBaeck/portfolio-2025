@@ -2,12 +2,12 @@
 
 .slide-item {
     color: white;
-    font-size: 48pt;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size: 72pt;
+    line-height: 1.0;
     width: 100%;
     font-family: area-extended, sans-serif;
     font-weight: 700;
+    overflow: hidden;
 }
 
 .right {
@@ -20,4 +20,10 @@
 
 .right, .center, .left {
     overflow-x: hidden;
+}
+
+@media (max-width: 840px) {
+    .slide-item {
+        font-size: 36pt;
+    }
 }
