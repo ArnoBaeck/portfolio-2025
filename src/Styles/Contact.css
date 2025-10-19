@@ -1,0 +1,51 @@
+* p, h1, h2, h3, h4, h5, h6, a {
+    font-family: "Area-extended", sans-serif;
+}
+
+.contact-container {
+    width: 90%;
+    margin: 0 auto;
+
+    margin-bottom: 100px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border-radius: 16px;
+    border: 1px solid #fff;
+    padding: 16px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue {
+    background-color: #001EFF;
+}
+
+.gray {
+    background-color: #242424;
+}
+
+.content-text {
+    width: 48%;
+    margin-top: 48px;
+}
+
+.content-buttons {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-title {
+    width: 100%;
+    font-size: 48pt;
+}
