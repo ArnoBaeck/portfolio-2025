@@ -15,7 +15,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="center">
-                    <p>2025 — Arno Baeck</p>
+                    <p>{(new Date().getFullYear())} — Arno Baeck</p>
                 </div>
                 <div className="right">
                     <div className="footer-links">

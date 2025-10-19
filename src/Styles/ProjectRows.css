@@ -1,4 +1,3 @@
-/* ---- tokens ---- */
 :root{
   --bg:#0b0c0f;
   --panel:#101217;
@@ -20,7 +19,6 @@ body{
   color:var(--text);
 }
 
-/* ---- wrappers ---- */
 .project-rows-container{
   width:100%;
   margin:48px 0;
@@ -39,7 +37,6 @@ body{
 
 .project-rows-list { display:block; }
 
-/* ---- desktop layout: 2 panelen in één item ---- */
 .project-item{
   display:grid;
   gap: var(--gap);
@@ -51,7 +48,6 @@ body{
 .project-item.odd  { grid-template-columns: 1fr 2fr; } /* links klein | rechts groot */
 .project-item.even { grid-template-columns: 2fr 1fr; } /* links groot | rechts klein */
 
-/* ---- gedeelde kaart-stijl ---- */
 .project-pane,
 .skills-pane{
   position:relative;
@@ -68,7 +64,6 @@ body{
   flex-direction:column;
 }
 
-/* ---- project pane specifics ---- */
 .project-media{
   position:absolute; inset:0;
   width:100%; height:100%; object-fit:cover;
@@ -91,7 +86,6 @@ body{
   border:1px solid rgba(154,164,255,.35); color:var(--text); text-decoration:none;
 }
 
-/* ---- skills pane ---- */
 .skills-pane{
   background:
     radial-gradient(500px 200px at 120% -40%, rgba(154,164,255,.08), transparent 60%),
@@ -107,9 +101,7 @@ body{
   white-space:nowrap;
 }
 
-/* ---- mobile: ALLES ONDER ELKAAR ---- */
 @media (max-width: 900px){
-  /* 1 kolom voor ALLE varianten */
   .project-item,
   .project-item.odd,
   .project-item.even{
@@ -121,41 +113,32 @@ body{
     overflow:hidden;
   }
 
-  /* volgorde per item: project boven, skills onder */
   .project-item .project-pane{ order:1; }
   .project-item .skills-pane{ order:2; }
 
-  /* interne panelen verliezen eigen “kaart”-chrome */
   .project-pane,
   .skills-pane{
     border: none;
     border-radius: 0;
     background: transparent;
     min-height: unset;
-    padding: 0; /* we zetten hieronder gerichte padding */
+    padding: 0;
   }
 
-  /* --- Project: eerst afbeelding, dan content --- */
   .project-media{
-    position: static;     /* niet absoluut */
+    position: static;
     display: block;
     width: 100%;
-    height: auto;         /* normale flow */
-    opacity: 1;           /* duidelijke foto op mobiel */
-    filter: none;         /* (optioneel) zonder extra filters */
+    height: auto;
+    opacity: 1;
+    filter: none;
   }
   .project-noise{ display:none; }
-
-  /* nette verhouding voor de image? Kies één: */
-  /* optie A: laat natuurlijke hoogte (nu actief door height:auto) */
-  /* optie B (alternatief): forceer ratio:
-     .project-media{ aspect-ratio: 16 / 9; object-fit: cover; } */
 
   .project-content{
     padding: 16px 16px 18px;
   }
 
-  /* --- Skills onder dezelfde kaart --- */
   .skills-pane{
     padding: 14px 16px 18px;
     border-top:1px dashed var(--line);

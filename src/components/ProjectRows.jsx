@@ -78,7 +78,7 @@ export default function ProjectRows() {
 		<div className="project-rows-container">
 			<div className="project-rows-inner">
 				<div className="project-rows-header">
-					<h1>Projects</h1>
+					<h1>PROJECTS</h1>
 				</div>
 
 				<div className="project-rows-list">

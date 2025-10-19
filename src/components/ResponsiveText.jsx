@@ -1,3 +1,5 @@
+import "../Styles/ResponsiveText.css";
+
 import { useEffect, useRef, useState } from 'react';
 
 const ResponsiveText = ({
