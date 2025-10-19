@@ -4,6 +4,7 @@ import Background from "./components/Background";
 import ResponsiveText from "./components/ResponsiveText";
 import SlideInText from "./components/SlideInText";
 import ProjectRows from "./components/ProjectRows"
+import Footer from "./components/Footer"
 
 export default function App() {
   return (
@@ -86,6 +87,8 @@ export default function App() {
         />
 
         <ProjectRows />
+
+        <Footer />
       </div>
     </>
   );
